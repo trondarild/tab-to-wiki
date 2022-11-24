@@ -20,8 +20,8 @@ fileobj.close()
 printable = set(string.printable)
 out = []
 for l in lines:
-  # TODO: change to work with p3x
-  a = l.decode("utf-8").replace(u"\xc2", "").replace(u"\xa0", " ").encode("utf-8")
+  #a = l.decode("utf-8").replace(u"\xc2", "").replace(u"\xa0", " ").encode("utf-8")
+  a = l.replace(u"\xc2", "").replace(u"\xa0", " ")
   #a = filter(lambda x: x in printable, a)
   out.append(a)
 lines = out
@@ -44,9 +44,9 @@ leveldict = {p0:'*', p1:"===\\1===", p2:"====\\1====", p3:"=====\\1=====", p31:"
 
 lst = lines
 for key in leveldict.keys():
-  lst = map(lambda x: re.sub(key, leveldict[key], x), lst)
-lst = map(lambda x: re.sub(p4, '', x), lst)
-lst = map(lambda x: re.sub(p5, '\\1\n', x), lst)
+  lst = list(map(lambda x: re.sub(key, leveldict[key], x), lst))
+lst = list(map(lambda x: re.sub(p4, '', x), lst))
+lst = list(map(lambda x: re.sub(p5, '\\1\n', x), lst))
 print (''.join(lst))
 
 ##debug
