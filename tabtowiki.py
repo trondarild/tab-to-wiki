@@ -20,6 +20,7 @@ fileobj.close()
 printable = set(string.printable)
 out = []
 for l in lines:
+  # TODO: change to work with p3x
   a = l.decode("utf-8").replace(u"\xc2", "").replace(u"\xa0", " ").encode("utf-8")
   #a = filter(lambda x: x in printable, a)
   out.append(a)
@@ -27,6 +28,7 @@ lines = out
 #lines = map(lambda x: re.sub(u'\xc2', u'', x), lines)
 #lines = map(lambda x: re.sub(u'\xa0', u' ', x), lines)
 
+# TODO does not appear to work with p3x
 ptrn = '[\w \:;,\."\(\)\-\+\?\–\’\']'
 p0 = r'<' # allows < as substitute for * bullet points
 p1 = r'^(' +ptrn+ '+)$' # first level heading - part or chapter
@@ -45,7 +47,7 @@ for key in leveldict.keys():
   lst = map(lambda x: re.sub(key, leveldict[key], x), lst)
 lst = map(lambda x: re.sub(p4, '', x), lst)
 lst = map(lambda x: re.sub(p5, '\\1\n', x), lst)
-print ''.join(lst)
+print (''.join(lst))
 
 ##debug
 '''
