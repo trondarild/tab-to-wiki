@@ -1,138 +1,741 @@
-Computing
-	Processes, Procedures, and Computers
-	Measuring Computing Power
-		Information
-		Representing Data
-		Growth of Computing Power
-	Science, Engineering, and the Liberal Arts
-	Summary and Roadmap
-Language
-	Surface Forms and Meanings
-	Language Construction
-	Recursive Transition Networks
-	Replacement Grammars
-	Summary
-Programming
-	Problems with Natural Languages
-	Programming Languages
-	Scheme
-	Expressions
-		Primitives
-		Application Expressions
-	Definitions
-	Procedures
-		Making Procedures
-		Substitution Model of Evaluation
-	Decisions
-	Evaluation Rules
-	Summary
-Problems and Procedures
-	Solving Problems
-	Composing Procedures
-		Procedures as Inputs and Outputs
-	Recursive Problem Solving
-	Evaluating Recursive Applications
-	Developing Complex Programs
-		Printing
-		Tracing
-	Summary
-Data
-	Types
-	Pairs
-		Making Pairs
-		Triples to Octuples
-	Lists
-	List Procedures
-		Procedures that Examine Lists
-		Generic Accumulators
-		Procedures that Construct Lists
-	Lists of Lists
-	Data Abstraction
-	Summary of Part I
-Machines
-	History of Computing Machines
-	Mechanizing Logic
-		Implementing Logic
-		Composing Operations
-		Arithmetic
-	Modeling Computing
-		Turing Machines
-	Summary
-Cost
-	Empirical Measurements
-	Orders of Growth
-		Big O
-		Omega
-		Theta
-	Analyzing Procedures
-		Input Size
-		Running Time
-		Worst Case Input
-	Growth Rates
-		No Growth: Constant Time
-		Linear Growth
-		Quadratic Growth
-		Exponential Growth
-		Faster than Exponential Growth
-		Non-terminating Procedures
-	Summary
-Sorting and Searching
-	Sorting
-		Best-First Sort
-		Insertion Sort
-		Quicker Sorting
-		Binary Trees
-		Quicksort
-	Searching
-		Unstructured Search
-		Binary Search
-		Indexed Search
-	Summary
-Mutation
-	Assignment
-	Impact of Mutation
-		Names, Places, Frames, and Environments
-		Evaluation Rules with State
-	Mutable Pairs and Lists
-	Imperative Programming
-		List Mutators
-		Imperative Control Structures
-	Summary
-Objects
-	Packaging Procedures and State
-		Encapsulation
-		Messages
-		Object Terminology
-	Inheritance
-		Implementing Subclasses
-		Overriding Methods
-	Object-Oriented Programming
-	Summary
-Interpreters
-	Python
-		Python Programs
-		Data Types
-		Applications and Invocations
-		Control Statements
-	Parser
-	Evaluator
-		Primitives
-		If Expressions
-		Definitions and Names
-		Procedures
-		Application
-		Finishing the Interpreter
-	Lazy Evaluation
-		Lazy Interpreter
-		Lazy Programming
-	Summary
-Computability
-	Mechanizing Reasoning
-		Gödel's Incompleteness Theorem
-	The Halting Problem
-	Universality
-	Proving Non-Computability
-	Summary
-Indexes
-	Index
-	People
+Part I: Practical, Experimental Laboratory Computing
+	Analog Computation
+		Glossary
+		Introduction
+			Definition of the Subject
+		History
+			Preelectronic Analog Computation
+			Electronic Analog Computation in the Twentieth Century
+			The Eclipse of Analog Computing
+			Analog VLSI
+			Field Programmable Analog Arrays
+			Nonelectronic Analog Computation
+		Article Road Map
+		Fundamentals of Analog Computing
+			Continuous State Space
+		Computational Process
+			Continuous Time
+			Sequential Time
+			Discrete Time
+		Analog Computer Programs
+		Characteristics of Analog Computation
+			Precision
+			Scaling
+		Analog Computation in Nature
+			Neural Computation
+			Adaptive Self-Organization in Social Insects
+			Genetic Circuits
+		Is Everything a Computer?
+		General-Purpose Analog Computation
+			The Importance of General-Purpose Computers
+			General-Purpose Electronic Analog Computers
+			Shannon´s Analysis
+			Rubel´s Extended Analog Computer
+		Analog Computation and the Turing Limit
+			Introduction
+		A Sampling of Theoretical Results
+			Continuous-Time Models
+			Sequential-Time Models
+				Recurrent Neural Networks
+			Dissipative Models
+		Real-Valued Inputs, Outputs, and Constants
+		The Issue of Simulation by Turing Machines and Digital Computers
+		The Problem of Models of Computation
+		Relevant Issues for Analog Computation
+		Transcending Turing Computability
+		Analog Thinking
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Mechanical Computing: The Computational Complexity of Physical Devices
+		Glossary
+		Definition of the Subject and Its Importance
+		Introduction to Computational Complexity
+			Abstract Computing Machine Models
+			Other Abstract Computing Machine Models
+		The Computational Complexity of Motion Planning and Simulation of Mechanical Devices
+			Complexity of Motion Planning for Mechanical Devices with Articulated Joints
+		Other PSPACE Completeness Results for Mechanical Devices
+		Ballistic Collision-Based Computing Machines and PSPACE
+		Brownian Machines and PSPACE
+		Hardness Results for Mechanical Devices with a Constant Number of Degrees of Freedom
+		NP Hardness Results for Path Problems in Two and three Dimensions
+			PSPACE Hard Physical Simulation Problems
+			A Provably Intractable Mechanical Simulation Problem: Compliant Motion Planning with Uncertainty in Control
+				Undecidable Mechanical Simulation Problems
+		Concrete Mechanical Computing Devices
+		Mechanical Devices for Storage and Sums of Numbers
+		Analog Mechanical Computing Devices
+		Digital Mechanical Devices for Arithmetic Operations
+		Digital Mechanical Devices for Mathematical Tables and Functions
+		Mechanical Devices for Timing, Sequencing, and Logical Control
+		Mechanical Devices Used in Cryptography
+		Mechanical and Electrooptical Devices for Integer Factorization
+		Future Directions
+			Mechanical Self-Assembly Processes
+			Analog Computation by Chemical Reactions
+			Analog Computation by Bacterial Genetic Circuits
+		Bibliography
+	Optical Computing
+		Glossary
+		Definition of the Subject
+		Introduction
+			Time Efficiency
+			Efficiency in Interconnection Complexity
+			Energy Efficiency
+			Coherence
+			Optical Image Processing
+			Overview of the Chapter
+		History
+			Optical Pattern Recognition
+			Analog Optical Numerical Computation
+			Digital Optical Computing
+			Optical Models of Computation
+		Selected Elements of Optical Computing Systems
+			Sources
+			Spatial Light Modulators
+			Detectors and Nature´s Square Law
+			Lenses
+			Interference and Complex Addition
+			Image Copying and Combining
+			Multiplication of Images
+			Other Elements of Optical Computation
+		Continuous Space Machine (CSM)
+			CSM Definition
+			Complexity Measures
+			Optical Realization
+		Example CSM Data Structures and Algorithms
+			Representing Data as Images
+			A Matrix Squaring Algorithm
+		2-CSM
+			Worst-Case CSM Resource Usage
+			2-CSM
+		Optical Computing and Computational Complexity
+			2-CSM and Parallel Complexity Theory
+		Future Directions
+		Bibliography
+	Principles of Neuromorphic Photonics
+		Glossary
+		Definition of the Subject
+		Introduction
+		Neuromorphic Computing: Beyond von Neumann and Moore
+		Technology Platforms
+			Neuromorphic Microelectronics
+			Toward Neuromorphic Photonics
+		Neuromorphic Photonics
+			Photonic Spike Processing
+			Photonic Reservoir Computing
+			Challenges for Integrated Neuromorphic Photonics
+		Photonic Neuron
+			What Is an Artificial Neuron?
+			Basic Requirements for a Photonic Neuron
+			The Processing Network Node
+				All-Optical PNNs
+				O
+		Excitable
+			Analogy to Leaky Integrate-and-Fire Model
+			Semiconductor Excitable Lasers
+		Photonic Neural Network Architecture
+			Isomorphism to Biological Spiking Neuron
+			Broadcast-and-Weight Protocol
+			Controlling Photonic Weight Banks
+				Single Channel Control Accuracy and Precision
+				Multichannel Control Accuracy and Precision
+			Scalability with Photonic Weight Banks
+		Neuromorphic Platform Comparison
+		Future Directions
+			Real-Time Radio-Frequency Processing
+			Nonlinear Programming
+		Summary and Conclusion
+		Bibliography
+	Quantum Computing
+		Glossary
+		Definition of the Subject
+		Introduction
+		Digital Quantum Computing
+		What Is a Qubit? (Quantum Mechanics for Dummies)
+		Quantum Gates
+		How Do Qubits Give Us Cool Computing?
+		How Quantum Computing Got Started (A Little Bit of History)
+		Error Correction for Quantum Computers
+		Programming a Quantum Computer
+		Shor´s Algorithm
+		Quantum Walks
+		How Powerful Is Quantum Computing?
+		Ultimate Physical Limits to Computation
+		Can We Build a Quantum Computer?
+		Unconventional Extensions
+		Cluster-State Quantum Computing
+		Topological Quantum Computing
+		What About Analog?
+		Continuous-Variable Quantum Computing
+		Hybrid Quantum Computing Architectures
+		Continuous-Time Quantum Computing
+		Adiabatic Quantum Computing and Quantum Annealing
+		Quantum Walks (Reprise)
+		Quantum Simulation
+		Non-digital Implementations of Quantum Computing
+		Biological Quantum Computing?
+		Future Directions
+		Bibliography
+			Books and Reviews
+			Primary Literature
+	Computing with Solitons
+		Glossary
+		Definition of the Subject
+		Introduction
+		Scalar Solitons
+		Vector Solitons
+		Manakov Solitons
+		Manakov Soliton Computing
+		FANOUT
+		NOT and ONE Gates
+		Output
+		Time Gating
+		Wiring
+		A Second Speed and Final FANOUT and NAND
+		Universality
+		Discussion
+		Multistable Soliton Collision Cycles
+		The Basic Three-Cycle and Computational Experiments
+		A Tristable Example Using a Four-Cycle
+		Discussion
+		Application to Noise-Immune Soliton Computing
+		Experiments
+		Experimental Setup and Design
+		Vector Soliton Propagation
+		Spatial Soliton Collisions
+		Future Directions
+		Bibliography
+	Reaction-Diffusion Computing
+		Glossary
+		Introduction
+		Classification of Reaction-Diffusion Processors
+		Recipes of the Chemical Processors
+			Palladium Processor
+			BZ Processor
+			Light-Sensitive Sub-Excitable BZ Processor
+		Specialized Processors
+			Voronoi Diagram and Skeletonization
+			Collision-Free Path Calculation
+			Taxis
+			Control of Robotic Hand
+			Parallel Actuators
+		Universal Processors
+			Basic Gates in Excitable Chemical Medium
+			Constant Truth Generators
+		Arithmetic Circuits
+		Future Directions
+		Bibliography
+	Computing in Geometrical Constrained Excitable Chemical Systems
+		Glossary
+		Definition of the Subject
+		Introduction
+		Logic Gates, Coincidence Detectors and Signal Filters
+		Chemical Sensors Built with Structured Excitable Media
+		The Ring Memory and Its Applications
+		Artificial Chemical Neurons with Excitable Medium
+		Perspectives and Conclusions
+			Perspectives
+		Conclusions
+			Acknowledgments
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Novel Hardware for Unconventional Computing
+		Glossary
+		Definition of the Subject
+		Introduction
+		Constructing Electrical Analog of Reaction-Diffusion Systems
+		Digital CMOS Reaction-Diffusion Chips
+			A Reaction-Diffusion Circuit Based on Cellular Automaton Processing Emulating the Belousov-Zhabotinsky Reaction
+			Reaction-Diffusion Chip Implementing Excitable Lattices with Multiple-Valued Cellular Automata
+			Silicon Implementation of a Chemical Reaction-Diffusion Processor for Computation of Voronoi Diagram
+			A Quadrilateral-Object Composer for Binary Images with Reaction-Diffusion Cellular Automata
+		Analog CMOS Reaction-Diffusion Chip
+			Analog Reaction-Diffusion Chip with Hardware Oregonator Model
+			Striped and Spotted Pattern Generation on RD Cellular Automata
+		Reaction-Diffusion Computing Devices Based on Minority-Carrier Transport in Semiconductors
+		Single-Electron Reaction-Diffusion System
+		Expanding Circular Pattern
+		Rotating Spiral Pattern
+		Dividing-and-Multiplying Pattern
+		Collision-Based RD Computers
+		Collision-Based Reaction-Diffusion Computing for Digital LSIs
+		Future Directions
+		Bibliography
+	Thermodynamics of Computation
+		Glossary
+		Definition of the Subject
+		Introduction
+			Thermodynamics
+			Computer Equivalents of the First and Second Laws
+		The Thermodynamics of Digital Computers
+		Analog and Digital Computers
+		Natural Computing
+		Quantum Computing
+		Optical Computing
+			Thermodynamically Inspired Computing
+		Cellular Array Processors
+		Conclusions
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Enzyme-Based Logic Systems: Composition, Operation, Interfacing, and Applications
+		Abbreviations
+		Introduction
+		Enzyme-Based Logic Gates and Short Logic Circuits
+		Decreasing Noise in the Enzyme-Based Logic Systems: Filters Producing Sigmoid Response Functions
+		Interfacing of the Enzyme Logic Gates with Various Signal-Transducing Systems
+			Optical Analysis of the Output Signals Generated by Enzyme Logic Systems
+				Optical Absorbance Measurements for Transduction of Output Signals Produced by Enzyme Logic Gates
+				Bioluminescence Measurements for Transduction of Output Signals Produced by Enzyme Logic Gates
+				Surface Plasmon Resonance Measurements for Transduction of Output Signals Produced by Enzyme Logic Gates
+			Electrochemical Analysis of the Output Signals Generated by Enzyme Logic Systems
+				Chronoamperometric Transduction of Chemical Output Signals Produced by Enzyme-Based Logic Systems
+				Potentiometric Transduction of Chemical Output Signals Produced by Enzyme-Based Logic Systems
+				pH Measurements as a Tool for Transduction of Chemical Output Signals Produced by Enzyme-Based Logic Systems
+				Indirect Electrochemical Analysis of Output Signals Generated by Enzyme-Based Logic Systems Using Electrodes Functionalized wi...
+				Conductivity Measurements as a Tool for Transduction of Chemical Output Signals Produced by Enzyme-Based Logic Systems
+				Transduction of Chemical Output Signals Produced by Enzyme-Based Logic Systems Using Semiconductor Devices
+			Macro
+				Mechanical Bending of a Cantilever Used for Transduction of Chemical Output Signals Produced by the Enzyme-Based Logic Systems
+				Quartz Crystal Microbalance (QCM) Transduction of Chemical Output Signals Produced by the Enzyme-Based Logic Systems
+				Atomic Force Microscopy (AFM) Transduction of Chemical Output Signals Produced by the Enzyme-Based Logic Systems
+		Digital Biosensors Based on Enzyme Logic Gates
+		Conclusions and Perspectives
+		Bibliography
+	DNA Computing
+		Glossary
+		Definition of the Subject
+		Introduction
+			Early Work
+			Motivation
+		The DNA Molecule
+			DNA Structure
+			Operations on DNA
+			Synthesis
+			Denaturing, Annealing, and Ligation
+			Separation of Strands
+			Gel Electrophoresis
+			PCR
+		The First DNA Computation
+		Models of DNA Computation
+			Satisfiability Model
+			Parallel Filtering Model
+		Subsequent Work
+			DNA Addition
+			Maximal Clique Computation
+			Chess Games
+			Computing on Surfaces
+			Computing with Hairpins
+			Gel-Based Computing
+		Assessment
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Molecular Automata
+		Glossary
+		Definition
+		Introduction
+		Molecular Automata as Language Recognizers
+			Preliminaries
+				Finite-State Automata
+				More Powerful Automata
+				Wang Tiles and Self-Assembly
+			Prototypes
+				Molecular Automata as Language Recognizers
+				Benenson´s Finite Automaton
+				DNA Self-Assembly
+				Algorithmic DNA Self-Assembly
+		Molecular Automata as Transducers and Controllers
+			Preliminaries
+				Finite-State Transducers
+				Molecular Automata as Language Recognizers
+				Deoxyribozyme-Based Logic Gates as Transducers
+			Prototypes
+				Therapeutic and Diagnostic Automata
+				Adders and Other Elementary Arithmetic and Logic Functions
+				Automata for Games of Strategy
+				Improved Automata for Games of Strategy
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Nanocomputers
+		Glossary
+		Definition of the Subject
+		Introduction
+		Wires and Devices
+		Nanofabrication Techniques and Architectures
+		Heat Dissipation
+		Fault-Tolerance
+		Cellular Automaton-Based Architectures
+		Crossbar Array-Based Architectures
+		Neural Network-Based Architectures
+		Future Directions
+		Bibliography
+	Cellular Computing
+		Glossary
+		Definition of the Subject
+		Introduction
+		Computation and Computability
+		The Machine as a Cell
+			Example: Cellular Automata
+			Example: Membrane Computing
+			Example: Amorphous Computing
+		Cellular Computing Hardware
+			Example: Embryonics
+			Example: Field Programmable Gate Arrays
+			Example: The Cell Matrix
+		The Cell as a Machine
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Neuromorphic Computing Based on Organic Memristive Systems
+		Glossary
+		Definition of the Subject
+		Introduction
+		Architecture and Properties of Organic Memristive Device
+		Biomimicking Circuits
+			Oscillator
+			Mimicking Parts of Nervous System
+		Organic Memristive Device Based Hardware Artificial Neuron Networks
+			Logic with Memory
+			Perceptron
+			Stochastic Networks
+		Conclusions and Future Directions
+		Bibliography
+	Slime Mold Computing
+		Glossary
+		Introduction
+		Optimization and Graphs
+			Shortest Path and Maze
+			Towers of Hanoi
+			Travelling Salesman Problem
+			Spanning Tree
+			Approximation of Transport Networks
+			Mass Migration
+			Experimental Archeology
+			Evacuation
+			Space Exploration
+		Geometry
+			Voronoi Diagram
+			Delaunay Triangulation
+			Concave Hull
+		Computing Circuits
+			Attraction-Based Logical Gates
+			Ballistic Logical Gates
+			Optoelectronics Logical Gates
+			Frequency Based Logical Gates
+			Micro-fluidic Logical Gates
+			Intracellular Collision-Based Computing
+			Kolmogorov-Uspensky Machine
+		Mathematical Models and Algorithms Inspired by Physarum but Never Implemented in Laboratory Experiments
+		Future Directions
+		Bibliography
+	Evolution in Materio
+		Glossary
+		Definition of the Subject
+		Introduction
+			Physical Computation
+		Evolutionary Algorithms
+		Evolution in Materio: Historical Background
+		Evolution in Materio: Defining Suitable Materials
+			Liquid Crystal
+			Conducting and Electroactive Polymers
+			Voltage-Controlled Colloids
+			Langmuir-Blodgett Films
+			Kirchhoff-Lukasiewicz Machines
+		Evolution in Materio is Verified with Liquid Crystal
+		Evolution in Materio Using Liquid Crystal: Implementational Details
+			Stability and Repeatability Issues
+			Dealing with Environmental Issues
+		The Computational Power of Materials
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Reversible Computing
+		Glossary
+		Definition of the Subject
+		Introduction
+		Reversible Logic Elements and Circuits
+			Reversible Logic Gate
+			Reversible Logic Element with Memory
+			Definitions on Reversible Logic Elements with Memory
+			Rotary Element: A Typical RLEM
+			Universality of 2-State RLEMs
+			Billiard Ball Model (BBM)
+		Reversible Turing Machines
+			Definitions on Reversible Turing Machines (RTMs)
+			Universality of RTMs and Garbage-Less Computation
+			Constructing RTMs by REs
+			Universal RTMs
+		Other Models of Reversible Computing
+		Future Directions
+			How Can We Realize Reversible Computers as a Hardware?
+			How Simple Can Reversible Computers Be?
+			Novel Architectures for Reversible Computers
+			Asynchronous and Continuous-Time Reversible Models
+		Bibliography
+			Primary Literature
+			Books and Reviews
+Part II: Theory of Computation and Nature-Inspired Algorithms
+	Bacterial Computing
+		Glossary
+		Definition of the Subject
+		Introduction
+		Motivation for Bacterial Computing
+		The Logic of Life
+			DNA as the Carrier of Genetic Information
+			Transcription and Translation
+			Genetic Regulation
+			The Lac Operon
+		Rewiring Genetic Circuitry
+		Successful Implementations
+			Synthetic Oscillator
+			Synthetic Toggle Switch
+			Engineered Communication
+			Synthetic Circuit Evolution
+			Pattern Formation
+			Bacterial Camera
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Immune Computing
+		Glossary
+		Definition of the Subject
+		Introduction
+		What Is an Artificial Immune System?
+		Current Artificial Immune Systems Biology and Basic Algorithms
+			Immunity
+			Natural Clonal Selection
+			Artificial Clonal Selection
+			Immune Networks
+			Artificial Immune Networks
+			Negative Selection
+			Artificial Negative Selection
+		Alternative Immunological Theories for AIS
+			Danger Theory
+			Cognitive Immunology
+		Emerging Methodologies in AIS
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Membrane Computing: Power and Complexity
+		Glossary
+		Introduction
+		Types of P Systems
+		General Functioning of P Systems
+		Examples of P Systems
+			Basic Cell-Like P Systems
+			Spiking Neural P Systems
+			Generalized Communicating P Systems
+		Computing Power
+		Computational Efficiency
+		Future Directions
+			Acknowledgments
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Applications of P Systems
+		Glossary
+		Introduction
+		Applications in Systems in Synthetic Biology
+		Applications to Real-Life Complex Problems
+			Membrane Algorithms
+			Fault Diagnosis and Robot Control
+		Other Applications
+		Future Directions
+			Acknowledgments
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Social Algorithms
+		Glossary
+		Introduction
+		Algorithms and Optimization
+			Essence of an Algorithm
+			Optimization
+			Traditional Algorithms or Social Algorithms?
+		Social Algorithms
+			Ant Colony Optimization
+			Particle Swarm Optimization
+			Bees-Inspired Algorithms
+			Bat Algorithm
+			Firefly Algorithm
+			Cuckoo Search
+			Other Algorithms
+		Algorithm Analysis and Insight
+			Characteristics of Social Algorithms
+			No-Free-Lunch Theorems
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Cellular Ants Computing
+		Glossary
+		Definition of the Subject
+		Introduction
+		Cellular Automata Fundamentals
+		Ant Colony Optimization Algorithms
+		Principles and Applications of Cellular Ants
+			Cellular Ants in Data Clustering
+			Cellular Ants in Swarm Robotics
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Artificial Chemistry
+		Glossary
+		Definition of the Subject
+		Introduction
+			Introductory Example
+		Basic Building Blocks of an Artificial Chemistry
+			Molecules
+			Reaction Rules
+			Dynamics
+				The Chemical Differential Equation
+				Explicitly Simulated Collisions
+				Discrete Event Simulation
+		Structure-to Function Mapping
+			Example: Lambda Calculus (AlChemy)
+			Arithmetic and Logic Operations
+				Matrix Multiplication Chemistry
+			Autocatalytic Polymer Chemistries
+			Artificial Chemistries Inspired by Turing Machines
+				Machines with Fixed Tape Size
+			Assembler Automata
+			Lattice Molecular Systems
+			Cellular Automata
+			Mechanical Artificial Chemistries
+			Semi Realistic Molecular Structures and Graph Rewriting
+		Space
+			Techniques for Modeling Space
+			Phenomena in Space
+		Theory
+		Evolution
+			Extrinsic Evolution
+			Intrinsic Evolution
+			Syntactic and Semantic Closure
+		Information Processing
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Amorphous Computing
+		Glossary
+		Definition of the Subject
+		Introduction
+			Micro Fabrication
+			Cellular Engineering
+		The Amorphous Computing Model
+		Programming Amorphous Systems
+		Amorphous Computing Paradigms
+			Marker Propagation for Amorphous Particles
+			The Growing Point Language
+			Origami-Based Self-Assembly
+			Dynamic Recruitment
+			Growth and Regeneration
+			Abstraction to Continuous Space and Time
+		Primitives for Amorphous Computing
+			Gossip
+			Random Choice
+			Fields
+			Gradients
+				Active Gradients
+				Polarity
+				Adaptivity
+				Carrier
+				Distance Measure
+			Coordinates and Clusters
+		Means of Combination and Abstraction
+			Spatial and Temporal Sequencing
+			Pipelining
+			Restriction to Spatial Regions
+			Modularity and Abstraction
+		Supporting Infrastructure and Services
+			Particle Identity
+			Local Geometry and Gradients
+			Implementing Communication
+		Lessons for Engineering
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Reservoir Computing
+		Glossary
+		Introduction
+		Why Is Reservoir Computing Useful?
+		Quality of the Reservoir
+		A Neural Network as a Reservoir
+		The Origins of Reservoir Computing
+		Essential Mathematical Concepts and Definitions
+		Reservoir as a Filter
+		Two Models of Reservoir Computing
+			Echo State Networks
+			Liquid State Machines
+		Future Directions
+		Bibliography
+			Primary Literature
+			Books and Reviews
+	Unconventional Computational Problems
+		Glossary
+		Introduction
+		Unconventional Computations
+			Unconventional Computational Paradigms
+				Computations Obeying Mathematical Constraints
+				Time-Varying Computational Complexity
+				Rank-Varying Computational Complexity
+				Time-Varying Variables
+				Interacting Variables
+				Uncertain Time Constraints
+				The Global Variable Paradigm
+			Implications
+		Future Directions
+		Bibliography
+			(A) Primary Literature
+			(B) Books and Reviews
+	Algorithmic Cognition and the Computational Nature of the Mind
+		Glossary
+		Algorithmic Cognition
+			Unveiling the Mechanistic Inner-Workings of the Mind
+		Algorithmic Bayesian Estimations as a Model of the Mind
+		Conclusion
+		Bibliography
+	Approximations to Algorithmic Probability
+		Glossary
+		A Computational Theory of Everything
+			The Power of Mechanistic Models
+		Algorithmic Probability
+			An Alternative Method to Lossless Compression
+			An Unconventional Approach to Computing the Uncomputable
+			A Hybrid Divide-and-Conquer Method
+			A Sequence of Causal Models Is Itself a Causal Model
+		Conclusion
+		Bibliography
+	Grossone Infinity Computing
+		Glossary
+		Introduction
+		Numeral Systems, Their Accuracy, and Numbers They Can Express
+		Grossone-Based Numerals
+		Measuring Infinite Sets and Relations to Bijections
+		Concluding Remarks
+		Bibliography
+	Inductive Turing Machines
+		Glossary
+		Introduction
+		Basic Constructions, Theoretical Results, and Applications
+			Structure and Functioning of Inductive Turing Machines
+			Theoretical Results: Computational Power, Efficiency, and Other Properties of Inductive Turing Machines
+			Applications of Inductive Turing Machines
+		Future Directions
+		Bibliography
+Index
